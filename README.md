@@ -20,6 +20,10 @@ If you only want one, then you can simply and safely delete all the rules that b
 ###Further Styling
 The elements themselves scale very well based on the width and height in the label and changing colors is very easy as well. 
 
+<<<<<<< HEAD
 An example and overview can be found here: http://theshrouded.com/wp/?p=16
 
 Inspired by [cdflynn's Android crossview](https://github.com/cdflynn/crossview)
+=======
+An example and overview can be found here: http://theshrouded.com/wp/?p=16
+>>>>>>> 176f24777eba8e0f76eccf4ca4a6952cbb13f0fc

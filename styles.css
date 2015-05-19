@@ -1,0 +1,113 @@
+input.add-remove[type=checkbox]{
+    display:none;
+}
+input.add-remove[type=checkbox] + label{
+    width:16px;
+    height:16px;
+    display:inline-block;
+    position:relative;
+}
+input.add-remove[type=checkbox] + label:before {
+  content:"";
+  left: 50%;
+  width: 10%;
+  margin-left: -5%;
+  position:absolute;
+  z-index:-1;
+  height: 100%;
+  color: #ccc;
+  background:red;
+  font-style: italic;
+    -webkit-transition:-webkit-transform .3s;
+    transition:transform .3s;
+} 
+input.add-remove[type=checkbox] + label:after {
+  content:"";
+  position:absolute;
+  top: 50%;
+  height: 10%;
+  margin-top: -5%;
+  width: 100%;
+  background:red;
+  z-index:-1;
+  color: #ccc;
+  font-style: italic;
+  -webkit-transition:-webkit-transform .3s;
+  transition:transform .3s;
+}
+input.add-remove[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+input.add-remove[type=checkbox]:checked + label:before {
+  -webkit-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+} 
+input.add-remove[type=checkbox]:checked + label:after {
+  -webkit-transform:rotate(135deg);
+  -ms-transform:rotate(135deg);
+  transform:rotate(135deg);
+} 
+
+
+
+input.remove-add[type=checkbox]{
+    display:none;
+}
+input.remove-add[type=checkbox] + label{
+    width:16px;
+    height:16px;
+    display:inline-block;
+    position:relative;
+}
+input.remove-add[type=checkbox] + label:before {
+  content:"";
+  left: 50%;
+  width: 10%;
+  margin-left: -5%;
+  position:absolute;
+  z-index:-1;
+  height: 100%;
+  color: #ccc;
+  background:red;
+  font-style: italic;
+  -webkit-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  -webkit-transition:-webkit-transform .3s;
+  transition:transform .3s;
+} 
+input.remove-add[type=checkbox] + label:after {
+  content:"";
+  position:absolute;
+  top: 50%;
+  height: 10%;
+  margin-top: -5%;
+  width: 100%;
+  background:red;
+  z-index:-1;
+  color: #ccc;
+  font-style: italic;
+  -webkit-transform:rotate(135deg);
+  -ms-transform:rotate(135deg);
+  transform:rotate(135deg);
+  -webkit-transition:-webkit-transform .3s;
+  transition:transform .3s;
+}
+input.remove-add[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+input.remove-add[type=checkbox]:checked + label:before {
+  -webkit-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  transform:rotate(0deg);
+} 
+input.remove-add[type=checkbox]:checked + label:after {
+  -webkit-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  transform:rotate(0deg);
+} 
